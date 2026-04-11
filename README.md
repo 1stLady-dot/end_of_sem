@@ -1,6 +1,14 @@
+**Course:** Mobile Application Development (INFT 425)   
+**Instructor Guidance:** Kobbina Ewuul Nkechukwu Amoah   
+**Attribution:** This project was developed under the direct instruction and structured guidance of 
+the course instructor. All core features, implementation patterns, and technical decisions reflect
+the curriculum and weekly activities of this course. 
+
 # end_of_sem
 
-A new Flutter project.
+This project is my end of semester project for Mobile App Development (INFT 425). This project is a location aware personal 
+safety and emergency alert system. 
+
 
 ## Getting Started
 
