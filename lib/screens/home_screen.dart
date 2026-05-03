@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 import '../viewmodels/auth_viewmodel.dart';
 import '../viewmodels/alert_viewmodel.dart';
-import '../viewmodels/location_viewmodel.dart';
 import '../services/location_service.dart';
 import '../services/geofence_service.dart';
 import '../utils/constants.dart';
@@ -191,7 +190,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Hello, ${user?.name?.split(' ').first ?? 'Student'}!',
+                      'Hello, ${(user?.name ?? 'Student').split(' ').first}!',
                       style: const TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,

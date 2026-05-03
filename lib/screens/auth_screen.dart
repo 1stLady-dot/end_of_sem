@@ -3,7 +3,6 @@ import 'package:local_auth/local_auth.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:crypto/crypto.dart';
 import 'dart:convert';
-import '../services/local_storage_service.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});
@@ -18,7 +17,6 @@ class _AuthScreenState extends State<AuthScreen> {
   final TextEditingController _pinController = TextEditingController();
   
   bool _isBiometricSupported = false;
-  bool _isLoading = false;
   List<BiometricType> _availableBiometrics = [];
   
   @override

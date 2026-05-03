@@ -1,11 +1,11 @@
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
 import '../utils/constants.dart';
+import 'package:geocoding/geocoding.dart';
 
 class LocationService {
   static Future<bool> requestPermissions() async {
     final locationStatus = await Permission.location.request();
-    final backgroundStatus = await Permission.locationAlways.request();
     final notificationStatus = await Permission.notification.request();
     
     return locationStatus.isGranted && notificationStatus.isGranted;
@@ -43,7 +43,7 @@ class LocationService {
   
   static Future<String> getAddressFromCoordinates(double lat, double lng) async {
     try {
-      final placemarks = await Geolocator.placemarkFromCoordinates(lat, lng);
+      final placemarks = await placemarkFromCoordinates(lat, lng);
       if (placemarks.isNotEmpty) {
         final placemark = placemarks.first;
         return '${placemark.street}, ${placemark.locality}';

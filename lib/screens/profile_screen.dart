@@ -273,7 +273,7 @@ class ProfileScreen extends StatelessWidget {
       child: Column(
         children: [
           ListTile(
-            leading: const Icon(Icons.biometric),
+            leading: const Icon(Icons.fingerprint),
             title: const Text('Biometric Authentication'),
             subtitle: const Text('Unlock app with fingerprint/face ID'),
             trailing: Switch(

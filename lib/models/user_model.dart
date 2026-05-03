@@ -1,3 +1,6 @@
+import 'safe_zone_model.dart';
+import 'emergency_contact_model.dart';
+
 class AppUser {
   final String uid;
   final String email;

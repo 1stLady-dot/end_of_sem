@@ -40,7 +40,7 @@ dependencies:
   # Location & Maps (Week 9)
   geolocator: ^10.1.0
   google_maps_flutter: ^2.5.0
-  geocoding: ^2.1.1
+  geocoding: ^4.0.0
 
     # UI & Utilities
   provider: ^6.1.1
