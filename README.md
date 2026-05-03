@@ -6,8 +6,9 @@ the curriculum and weekly activities of this course.
 
 # end_of_sem
 
-This project is my end of semester project for Mobile App Development (INFT 425). This project is a location aware personal 
-safety and emergency alert system. 
+This project is my end of semester project for Mobile App 
+Development (INFT 425). This project is a location aware 
+personal safety and emergency alert system. 
 
 
 ## Getting Started
