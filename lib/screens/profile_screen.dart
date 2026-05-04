@@ -279,7 +279,7 @@ class ProfileScreen extends StatelessWidget {
             trailing: Switch(
               value: true,
               onChanged: (value) {},
-              activeColor: AppColors.primaryRed,
+              activeThumbColor: AppColors.primaryRed,
             ),
           ),
           const Divider(height: 1),
@@ -290,7 +290,7 @@ class ProfileScreen extends StatelessWidget {
             trailing: Switch(
               value: true,
               onChanged: (value) {},
-              activeColor: AppColors.primaryRed,
+              activeThumbColor: AppColors.primaryRed,
             ),
           ),
           const Divider(height: 1),
@@ -301,7 +301,7 @@ class ProfileScreen extends StatelessWidget {
             trailing: Switch(
               value: true,
               onChanged: (value) {},
-              activeColor: AppColors.primaryRed,
+              activeThumbColor: AppColors.primaryRed,
             ),
           ),
           const Divider(height: 1),
@@ -311,7 +311,7 @@ class ProfileScreen extends StatelessWidget {
             trailing: Switch(
               value: false,
               onChanged: (value) {},
-              activeColor: AppColors.primaryRed,
+              activeThumbColor: AppColors.primaryRed,
             ),
           ),
           const Divider(height: 1),

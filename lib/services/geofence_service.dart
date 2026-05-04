@@ -81,7 +81,7 @@ class GeofenceService {
       if (!zone.isDangerZone && !isInside && isLateNight && currentUserId != null) {
         // Check if user was previously inside
         // This would need state tracking - simplified for demo
-        print('User left safe zone: ${zone.name} at late night');
+        // TODO: Implement safe zone exit alert
       }
     }
   }

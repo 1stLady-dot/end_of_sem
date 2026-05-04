@@ -53,7 +53,12 @@ class _AuthScreenState extends State<AuthScreen> {
         Navigator.pushReplacementNamed(context, '/home');
       }
     } catch (e) {
-      print('Biometric error: $e');
+      // Handle biometric authentication error
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Biometric authentication failed')),
+        );
+      }
     }
   }
   

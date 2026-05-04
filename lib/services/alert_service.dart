@@ -52,9 +52,7 @@ class AlertService {
   // Send notification to emergency contact
   Future<void> _sendNotificationToContact(Map<String, dynamic> contact, Alert alert, String userName) async {
     // In production, integrate with SMS gateway or Firebase Cloud Messaging
-    print('Sending SOS to ${contact['name']} (${contact['phoneNumber']})');
-    print('Location: ${alert.latitude}, ${alert.longitude}');
-    print('User: $userName needs immediate assistance');
+    // TODO: Implement actual notification sending
   }
   
   // Notify campus security
